@@ -23,7 +23,7 @@ body {
 
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     color: #2D3748; /* Cor escura para contraste */
     background-color: rgba(255, 218, 185, 0.45); /* Fundo suave */
     padding: 10px 30px; /* Espaçamento confortável */
@@ -75,6 +75,8 @@ section button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
 }
 
+
+
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 60rem; /* Largura máxima da caixa de resultados */
@@ -95,6 +97,13 @@ section button:hover {
     background: linear-gradient(to bottom, rgba(255, 218, 185, 0.8), rgba(255, 218, 185, 0.6));
     transform: scale(1.02) rotateY(2deg);
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+.item-resultado img {
+    /* Estilos para a imagem */
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
@@ -130,6 +139,50 @@ footer {
     position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Estiliza a seção dos botões */
+#botoes-agentes {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha em telas menores */
+    gap: 20px; /* Espaço entre os botões */
+}
+
+#botoes-agentes button {
+    padding: 0.8rem 1.2rem;
+  background-color: #30475E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  
+  #botoes-agentes button:hover {
+    background-color: #30475E;
+    transform: scale(1.05);
+  }
+  
+  @media (min-width: 768px) {
+    #botoes-agentes {
+      flex-wrap: nowrap;
+    }
+  }
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    #botoes-agentes {
+        flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    }
+
+    #botoes-agentes button {
+        padding: 0.6rem 1rem; /* Ajusta o tamanho dos botões em telas menores */
+        font-size: 1rem; /* Ajusta o tamanho da fonte em telas menores */
+    }
 }
 
 @media (max-width: 768px) {

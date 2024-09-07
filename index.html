@@ -12,17 +12,30 @@
     <header>
         <h1>Cuidado e Compaixão</h1>
     </header>
+
     <main>
         <section>
-            <input type="text" placeholder="Converse conosco.">
+            <input type="text" placeholder="Converse conosco." id="campo-pesquisa">
             <button onclick="pesquisar()">
                 Pesquisar
             </button>
         </section>
+
+        <!--Seção com botões para exibir informações específica-->
+        <section id="botoes-agentes">
+            <!-- Botões que chamam a função exibirAgente com diferentes parâmetros -->
+            <button onclick="exibirAgente(0)">Tenho câncer, e agora?</button>
+            <button onclick="exibirAgente(1)">Sou cuidador, preciso de força!</button>
+            <button onclick="exibirAgente(2)">Sou amigo, como agir?</button>
+            <button onclick="exibirAgente(3)">Cuidados paliativos, o que são?</button>
+        </section>
+        <!-- Seção para exibir os resultados da pesquisa -->
         <section class="resultados-pesquisa" id="resultados-pesquisa">
         </section>
     </main>
+    </main>
     <footer>
+        <!-- Rodapé com informações de direitos autorais e contato -->
         <p>2024 - Câncer e Compaixão. Todos os direitos reservados.</p>
         <p>Entre em contato pelo email: gui.castelli.simi@gmail.com</p>
     </footer>
